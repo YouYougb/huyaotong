@@ -68,7 +68,7 @@ body{background:var(--bg);color:#202124;min-height:100vh;padding-bottom:var(--ta
 <div id="tab-search" class="tab-panel active">
 <div class="compare-bar" id="compareBar" style="display:none"><span id="compareCount">已选 0 种药物</span><button id="compareBtn" onclick="showCompare()" disabled>开始对比</button></div>
 <div class="search-box"><input type="text" id="searchInput" placeholder="搜索药物名称、拼音首字母..." oninput="filterDrugs()"><button class="mic-btn" id="micBtn" onclick="startVoice()">🎤</button><select id="catFilter" onchange="filterDrugs()"><option value="">全部分类</option><option value="5-HT3受体阻断药">5-HT3受体阻断药</option><option value="5-HT及NA再摄取抑制药">5-HT及NA再摄取抑制药</option><option value="ACE抑制药">ACE抑制药</option><option value="ARNI">ARNI</option><option value="AT1受体阻断药">AT1受体阻断药</option><option value="DPP-4抑制药">DPP-4抑制药</option><option value="GLP-1受体激动药">GLP-1受体激动药</option><option value="H1受体阻断药">H1受体阻断药</option><option value="H2受体阻断药">H2受体阻断药</option><option value="HMG-CoA还原酶抑制药">HMG-CoA还原酶抑制药</option><option value="If通道阻滞药">If通道阻滞药</option><option value="M胆碱受体阻断药">M胆碱受体阻断药</option><option value="NA和特异性5-HT能抗抑郁药">NA和特异性5-HT能抗抑郁药</option><option value="SGLT-2抑制药">SGLT-2抑制药</option><option value="α-葡萄糖苷酶抑制药">α-葡萄糖苷酶抑制药</option><option value="α1受体激动药">α1受体激动药</option><option value="α1受体阻断药">α1受体阻断药</option><option value="αβ受体激动药">αβ受体激动药</option><option value="αβ受体阻断药">αβ受体阻断药</option><option value="α受体激动药">α受体激动药</option><option value="α受体阻断药">α受体阻断药</option><option value="β-内酰胺酶抑制药">β-内酰胺酶抑制药</option><option value="β1受体激动药">β1受体激动药</option><option value="β1受体阻断药">β1受体阻断药</option><option value="β2受体激动药">β2受体激动药</option><option value="β受体激动药">β受体激动药</option><option value="β受体阻断药">β受体阻断药</option><option value="Ⅰa类抗心律失常药">Ⅰa类抗心律失常药</option><option value="Ⅰb类抗心律失常药">Ⅰb类抗心律失常药</option><option value="Ⅰc类抗心律失常药">Ⅰc类抗心律失常药</option><option value="Ⅱ类抗心律失常药">Ⅱ类抗心律失常药</option><option value="Ⅲ类抗心律失常药">Ⅲ类抗心律失常药</option><option value="Ⅳ类抗心律失常药">Ⅳ类抗心律失常药</option><option value="一线抗结核药">一线抗结核药</option><option value="三环类抗抑郁药">三环类抗抑郁药</option><option value="上皮钠通道阻滞药">上皮钠通道阻滞药</option><option value="丙烯胺类抗真菌药">丙烯胺类抗真菌药</option><option value="中枢性降压药">中枢性降压药</option><option value="中枢镇咳药">中枢镇咳药</option><option value="中枢镇痛药">中枢镇痛药</option><option value="二线抗结核药">二线抗结核药</option><option value="促凝血药">促凝血药</option><option value="促胃肠动力药">促胃肠动力药</option><option value="促胰岛素分泌药">促胰岛素分泌药</option><option value="促觉醒药">促觉醒药</option><option value="免疫增强药">免疫增强药</option><option value="免疫增强药(生物制剂)">免疫增强药(生物制剂)</option><option value="免疫抑制药">免疫抑制药</option><option value="免疫抑制药(mTOR抑制药)">免疫抑制药(mTOR抑制药)</option><option value="免疫抑制药(抗代谢类)">免疫抑制药(抗代谢类)</option><option value="免疫抑制药(钙调磷酸酶抑制药)">免疫抑制药(钙调磷酸酶抑制药)</option><option value="典型抗精神分裂症药">典型抗精神分裂症药</option><option value="去甲肾上腺素能神经末梢阻断药">去甲肾上腺素能神经末梢阻断药</option><option value="双胍类降糖药">双胍类降糖药</option><option value="双膦酸盐类">双膦酸盐类</option><option value="吸入性糖皮质激素">吸入性糖皮质激素</option><option value="吸入麻醉药">吸入麻醉药</option><option value="唑类抗真菌药">唑类抗真菌药</option><option value="喹诺酮类抗菌药">喹诺酮类抗菌药</option><option value="嘧啶类抗真菌药">嘧啶类抗真菌药</option><option value="噻嗪类利尿药">噻嗪类利尿药</option><option value="四环素类抗生素">四环素类抗生素</option><option value="外用糖皮质激素">外用糖皮质激素</option><option value="多烯类抗真菌药">多烯类抗真菌药</option><option value="多肽类抗生素">多肽类抗生素</option><option value="大环内酯类抗生素">大环内酯类抗生素</option><option value="子宫平滑肌兴奋药">子宫平滑肌兴奋药</option><option value="孕激素类药">孕激素类药</option><option value="局部麻醉药">局部麻醉药</option><option value="巴比妥类">巴比妥类</option><option value="广谱抗病毒药">广谱抗病毒药</option><option value="广谱青霉素类">广谱青霉素类</option><option value="强心苷类">强心苷类</option><option value="抗HIV/乙肝药">抗HIV/乙肝药</option><option value="抗HIV药">抗HIV药</option><option value="抗丙肝病毒药">抗丙肝病毒药</option><option value="抗乙肝病毒药">抗乙肝病毒药</option><option value="抗凝血药">抗凝血药</option><option value="抗孕激素类药">抗孕激素类药</option><option value="抗帕金森病药">抗帕金森病药</option><option value="抗惊厥药">抗惊厥药</option><option value="抗流感病毒药">抗流感病毒药</option><option value="抗滴虫药">抗滴虫药</option><option value="抗疟药">抗疟药</option><option value="抗疱疹病毒药">抗疱疹病毒药</option><option value="抗痛风药">抗痛风药</option><option value="抗癫痫药">抗癫痫药</option><option value="抗肠蠕虫药">抗肠蠕虫药</option><option value="抗肿瘤药(免疫治疗)">抗肿瘤药(免疫治疗)</option><option value="抗肿瘤药(内分泌治疗)">抗肿瘤药(内分泌治疗)</option><option value="抗肿瘤药(抗代谢类)">抗肿瘤药(抗代谢类)</option><option value="抗肿瘤药(抗生素类)">抗肿瘤药(抗生素类)</option><option value="抗肿瘤药(植物碱类)">抗肿瘤药(植物碱类)</option><option value="抗肿瘤药(烷化剂)">抗肿瘤药(烷化剂)</option><option value="抗肿瘤药(铂类)">抗肿瘤药(铂类)</option><option value="抗肿瘤药(靶向药)">抗肿瘤药(靶向药)</option><option value="抗胆碱平喘药">抗胆碱平喘药</option><option value="抗胆碱酯酶药">抗胆碱酯酶药</option><option value="抗血吸虫病药">抗血吸虫病药</option><option value="抗血小板药">抗血小板药</option><option value="抗贫血药">抗贫血药</option><option value="抗躁狂药">抗躁狂药</option><option value="抗过敏平喘药">抗过敏平喘药</option><option value="抗铜绿假单胞菌青霉素类">抗铜绿假单胞菌青霉素类</option><option value="抗雌激素类药">抗雌激素类药</option><option value="抗骨质疏松药">抗骨质疏松药</option><option value="抗麻风病药">抗麻风病药</option><option value="放射性碘">放射性碘</option><option value="林可霉素类抗生素">林可霉素类抗生素</option><option value="棘白菌素类抗真菌药">棘白菌素类抗真菌药</option><option value="止吐药">止吐药</option><option value="止泻药">止泻药</option><option value="氨基糖苷类抗生素">氨基糖苷类抗生素</option><option value="氯霉素类抗生素">氯霉素类抗生素</option><option value="泻药">泻药</option><option value="渗透性利尿药">渗透性利尿药</option><option value="甲状旁腺激素相关药">甲状旁腺激素相关药</option><option value="甲状腺激素">甲状腺激素</option><option value="盐皮质激素">盐皮质激素</option><option value="直接Xa因子抑制药">直接Xa因子抑制药</option><option value="硝基呋喃类抗菌药">硝基呋喃类抗菌药</option><option value="硝基咪唑类抗菌药">硝基咪唑类抗菌药</option><option value="硝酸酯类">硝酸酯类</option><option value="硫脲类抗甲状腺药">硫脲类抗甲状腺药</option><option value="碘及碘化物">碘及碘化物</option><option value="碳酸酐酶抑制药">碳酸酐酶抑制药</option><option value="碳青霉烯类">碳青霉烯类</option><option value="磺胺增效剂">磺胺增效剂</option><option value="磺胺类抗菌药">磺胺类抗菌药</option><option value="磺酰脲类降糖药">磺酰脲类降糖药</option><option value="祛痰药">祛痰药</option><option value="窄谱青霉素类">窄谱青霉素类</option><option value="第一代头孢菌素">第一代头孢菌素</option><option value="第三代头孢菌素">第三代头孢菌素</option><option value="第二代头孢菌素">第二代头孢菌素</option><option value="第四代头孢菌素">第四代头孢菌素</option><option value="精氨酸升压素受体阻断药">精氨酸升压素受体阻断药</option><option value="糖皮质激素">糖皮质激素</option><option value="糖肽类抗生素">糖肽类抗生素</option><option value="纤维蛋白溶解药">纤维蛋白溶解药</option><option value="维生素K拮抗药">维生素K拮抗药</option><option value="耐酶青霉素类">耐酶青霉素类</option><option value="肾素抑制药">肾素抑制药</option><option value="胃黏膜保护药">胃黏膜保护药</option><option value="胆固醇吸收抑制药">胆固醇吸收抑制药</option><option value="胆汁酸螯合剂">胆汁酸螯合剂</option><option value="胆碱受体激动药">胆碱受体激动药</option><option value="胆碱酯酶复活药">胆碱酯酶复活药</option><option value="胰岛素增敏药">胰岛素增敏药</option><option value="苯二氮䓬类">苯二氮䓬类</option><option value="茶碱类平喘药">茶碱类平喘药</option><option value="血管平滑肌扩张药">血管平滑肌扩张药</option><option value="袢利尿药">袢利尿药</option><option value="贝特类调脂药">贝特类调脂药</option><option value="质子泵抑制药">质子泵抑制药</option><option value="选择性5-HT再摄取抑制药">选择性5-HT再摄取抑制药</option><option value="选择性COX-2抑制药">选择性COX-2抑制药</option><option value="选择性M1受体阻断药">选择性M1受体阻断药</option><option value="选择性M3受体阻断药">选择性M3受体阻断药</option><option value="选择性雌激素受体调节药">选择性雌激素受体调节药</option><option value="造血细胞生长因子">造血细胞生长因子</option><option value="醛固酮受体阻断药">醛固酮受体阻断药</option><option value="钙通道阻滞药">钙通道阻滞药</option><option value="钾通道开放药">钾通道开放药</option><option value="阿尔茨海默病药">阿尔茨海默病药</option><option value="阿片受体拮抗药">阿片受体拮抗药</option><option value="降血糖药">降血糖药</option><option value="除极化型肌松药">除极化型肌松药</option><option value="雄激素类药">雄激素类药</option><option value="雌激素类药">雌激素类药</option><option value="静脉麻醉药">静脉麻醉药</option><option value="非典型抗精神分裂症药">非典型抗精神分裂症药</option><option value="非苯二氮䓬类">非苯二氮䓬类</option><option value="非苷类正性肌力药">非苷类正性肌力药</option><option value="非选择性COX抑制药">非选择性COX抑制药</option><option value="非除极化型肌松药">非除极化型肌松药</option><option value="骨矿化促进药">骨矿化促进药</option></select></div>
-<div id="drugList"></div><div id="emptyState" class="empty-state" style="display:none"><p>未找到匹配的药物</p></div></div>
+<div id="micHint" style="font-size:12px;color:var(--primary);margin:-12px 0 12px 14px;display:none">🎤 首次点击麦克风会请求麦克风权限，请点击"允许"</div><div id="drugList"></div><div id="emptyState" class="empty-state" style="display:none"><p>未找到匹配的药物</p></div></div>
 <div id="tab-warn" class="tab-panel">
 <div style="margin-bottom:12px"><button class="stats-link" onclick="openRulesModal()" style="padding:8px 16px;background:var(--primary-light);border-radius:8px;font-size:14px;color:var(--primary);text-decoration:none">📋 查看所有规则</button></div>
 <select id="caseSelect" onchange="loadCase()" style="width:100%;padding:10px;border:2px solid #e0e0e0;border-radius:8px;font-size:14px;background:white;margin-bottom:12px"><option value="">— 选择模拟病例加载 —</option><option value="心衰患者联合用药致高钾血症">心衰患者联合用药致高钾血症</option><option value="感染患者饮酒致双硫仑样反应">感染患者饮酒致双硫仑样反应</option><option value="房颤患者联合抗凝致消化道出血">房颤患者联合抗凝致消化道出血</option><option value="老年房颤患者NSAID致消化道出血">老年房颤患者NSAID致消化道出血</option><option value="心衰患者ACEI联合螺内酯致高钾血症">心衰患者ACEI联合螺内酯致高钾血症</option><option value="术后患者阿片类联用苯二氮䓬类致呼吸抑制">术后患者阿片类联用苯二氮䓬类致呼吸抑制</option><option value="消化科患者多潘立酮联用抗真菌药致QT延长">消化科患者多潘立酮联用抗真菌药致QT延长</option><option value="心衰患者地高辛联用利尿剂致洋地黄中毒">心衰患者地高辛联用利尿剂致洋地黄中毒</option><option value="感染患者使用头孢菌素后饮酒致双硫仑样反应">感染患者使用头孢菌素后饮酒致双硫仑样反应</option><option value="结核患者INH联合利福平致药物性肝损害">结核患者INH联合利福平致药物性肝损害</option><option value="感染患者氨基糖苷类联用袢利尿剂致肾损害">感染患者氨基糖苷类联用袢利尿剂致肾损害</option><option value="心肌梗死患者PPI联用氯吡格雷降低疗效">心肌梗死患者PPI联用氯吡格雷降低疗效</option><option value="糖尿病患者饮酒后致严重低血糖">糖尿病患者饮酒后致严重低血糖</option><option value="糖尿病患者β受体阻断药掩盖低血糖症状">糖尿病患者β受体阻断药掩盖低血糖症状</option><option value="止吐药联用抗精神病药致严重锥体外系反应">止吐药联用抗精神病药致严重锥体外系反应</option></select>
@@ -147,10 +147,10 @@ function filterDrugs(){
                 for(var ai=0;ai<d.severeAdverse.length;ai++){h+='<span class="tag-sev">'+esc(d.severeAdverse[ai])+'</span>'}
                 for(var ai=0;ai<d.mainAdverse.slice(0,3).length;ai++){h+='<span class="tag-adv">'+esc(d.mainAdverse.slice(0,3)[ai])+'</span>'}
                 h+='<div class="drug-detail" id="detail-'+d.id+'">';
-                h+='<div><b>\U0001f4cb \u7528\u836f\u524d\u62a4\u7406</b><br>'+esc(d.nursingPreUse)+'</div>';
-                h+='<div><b>\U0001f48a \u7528\u836f\u4e2d\u62a4\u7406</b><br>'+esc(d.nursingDuringUse)+'</div>';
-                h+='<div><b>\U0001f3c1 \u7528\u836f\u540e\u62a4\u7406</b><br>'+esc(d.nursingPostUse)+'</div>';
-                h+='<div><b>\U0001f6ab \u7981\u5fcc\u4eba\u7fa4</b><br>';
+                h+='<div><b>📋 \u7528\u836f\u524d\u62a4\u7406</b><br>'+esc(d.nursingPreUse)+'</div>';
+                h+='<div><b>💊 \u7528\u836f\u4e2d\u62a4\u7406</b><br>'+esc(d.nursingDuringUse)+'</div>';
+                h+='<div><b>🏁 \u7528\u836f\u540e\u62a4\u7406</b><br>'+esc(d.nursingPostUse)+'</div>';
+                h+='<div><b>🚫 \u7981\u5fcc\u4eba\u7fa4</b><br>';
                 for(var ci=0;ci<d.contraindications.length;ci++){h+=esc(d.contraindications[ci])+"; "}
                 h+='</div>';
                 h+='<label><input type="checkbox" onchange="toggleCompare('+d.id+',this)"> \u6dfb\u52a0\u5bf9\u6bd4</label>';
@@ -202,26 +202,34 @@ function closeCompare(){document.getElementById("compareModal").classList.remove
 
 function startVoice(){
     if(typeof window.SpeechRecognition==="undefined"&&typeof window.webkitSpeechRecognition==="undefined"){
-        alert("\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u8bed\u97f3\u8f93\u5165");return;
+        alert("您的浏览器不支持语音输入，请使用Chrome浏览器");return
     }
-    var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-    var r=new SR();
-    r.lang="zh-CN";
-    r.interimResults=false;
-    var btn=document.getElementById("micBtn");
-    btn.classList.add("recording");
-    btn.textContent="\U0001f534";
-    r.onresult=function(e){
-        document.getElementById("searchInput").value=e.results[0][0].transcript;
-        filterDrugs();
-        btn.classList.remove("recording");btn.textContent="\U0001f3a4";
-    };
-    r.onerror=function(){btn.classList.remove("recording");btn.textContent="\U0001f3a4";};
-    r.onend=function(){btn.classList.remove("recording");btn.textContent="\U0001f3a4";};
-    r.start();
-}
-
-function loadCase(){
+    var btn=document.getElementById("micBtn");if(!btn)return;
+    if(btn.classList.contains("recording"))return;
+    var hint=document.getElementById("micHint");
+    if(hint)hint.style.display="block";
+    try{
+        var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+        var r=new SR();r.lang="zh-CN";r.continuous=false;r.interimResults=false;
+        btn.classList.add("recording");btn.textContent="🔴";
+        r.onresult=function(e){
+            var t=e.results[0][0].transcript;
+            t=t.replace(/[。，、　\s.]/g,"");
+            document.getElementById("searchInput").value=t;filterDrugs()
+        };
+        r.onerror=function(e){
+            btn.classList.remove("recording");btn.textContent="🎤";
+            if(e.error==="not-allowed"){
+                if(hint)hint.textContent="❌ 麦克风权限被拒绝，请在浏览器地址栏左侧点击铁锁图标，将“麦克风”设置为“允许”"
+            }
+        };
+        r.onend=function(){btn.classList.remove("recording");btn.textContent="🎤"};
+        r.start()
+    }catch(err){
+        btn.classList.remove("recording");btn.textContent="🎤";
+        if(hint)hint.textContent="语音识别启动失败："+err.message
+    }
+}function loadCase(){
     var t=document.getElementById("caseSelect").value;
     if(!t)return;
     var c=CASES.find(function(x){return x.title===t});
@@ -277,7 +285,7 @@ function analyzeInteractions(){
     var r=document.getElementById("warnResults");
     var rp=document.getElementById("reportBox");
     if(warnDrugs.length<2){
-        r.innerHTML='<div class="warn-card safe"><div class="warn-title">\u26a0\ufe0f \u8bf7\u81f3\u5c11\u6dfb\u52a02\u79cd\u836f\u7269</div></div>';
+        r.innerHTML='<div class="warn-card safe"><div class="warn-title">\u26a0️ \u8bf7\u81f3\u5c11\u6dfb\u52a02\u79cd\u836f\u7269</div></div>';
         rp.style.display="none";return;
     }
     var found=[];
@@ -350,23 +358,29 @@ function selectA(idx){
     var ca=document.getElementById("quizContent").dataset.correct;
     var drugName=document.getElementById("quizContent").dataset.drugName;
     var opts=document.querySelectorAll(".quiz-option");
+    if(opts.length===0||opts[0].classList.contains("correct"))return;
     for(var i=0;i<opts.length;i++){
         if(opts[i].textContent===ca){opts[i].classList.add("correct")}
         else if(i===idx){opts[i].classList.add("wrong")}
     }
     var isCorrect=opts[idx].textContent===ca;
-    qs.total++;if(isCorrect)qs.corr++;
-    if(!isCorrect&&!qs.wrong.some(function(w){return w.name===drugName})){
-        qs.wrong.push({name:drugName,answer:ca});
-        localStorage.setItem("wrongBook",JSON.stringify(qs.wrong));
-    }
-    document.getElementById("quizStats").textContent="\u6b63\u786e\u7387: "+Math.round(qs.corr/(qs.total||1)*100)+"% ("+qs.corr+"/"+qs.total+")";
-    updWB();
-    var nb="<div style=\"margin-top:16px;text-align:center\"><button onclick=\"loadQ()\" style=\"padding:10px 24px;background:var(--primary);color:white;border:none;border-radius:8px;cursor:pointer;font-size:14px\">\u4e0b\u4e00\u9898</button></div>";
-    document.getElementById("quizContent").innerHTML+=nb;
-}
-
-function updWB(){
+    if(document.getElementById("quizNextBtn"))return;
+    var fb=document.createElement("div");fb.style.cssText="margin-top:16px;text-align:center";
+    var nb=document.createElement("button");nb.id="quizNextBtn";
+    nb.textContent="下一题";
+    nb.style.cssText="padding:10px 24px;background:var(--primary);color:white;border:none;border-radius:8px;cursor:pointer;font-size:14px";
+    nb.onclick=function(){
+        if(isCorrect){qs.corr++}else{
+            if(!qs.wrong.some(function(w){return w.name===drugName})){
+                qs.wrong.push({name:drugName,answer:ca});
+                localStorage.setItem("wrongBook",JSON.stringify(qs.wrong))
+            }
+        }
+        document.getElementById("quizStats").textContent="正确率: "+Math.round(qs.corr/(qs.total||1)*100)+"% ("+qs.corr+"/"+qs.total+")";
+        updWB();loadQ()
+    };
+    fb.appendChild(nb);document.getElementById("quizContent").appendChild(fb)
+}function updWB(){
     var lst=document.getElementById("wrongList");
     document.getElementById("wrongCount").textContent=qs.wrong.length;
     if(qs.wrong.length===0){lst.innerHTML="<div style=\"color:#999;font-size:14px;padding:8px\">\u6682\u65e0\u9519\u9898</div>";return}
@@ -414,7 +428,7 @@ function showCard(id){
     for(var i=0;i<postItems.length;i++){if(postItems[i].trim())h+=esc(postItems[i].trim())+"<br>"}
     h+="</div>";
     if(d.severeAdverse.length>0){
-        h+='<div class="card-warn-box"><div style="font-weight:600;color:var(--danger)">\u26a0\ufe0f \u4e25\u91cd\u4e0d\u826f\u53cd\u5e94\u8b66\u793a</div>';
+        h+='<div class="card-warn-box"><div style="font-weight:600;color:var(--danger)">\u26a0️ \u4e25\u91cd\u4e0d\u826f\u53cd\u5e94\u8b66\u793a</div>';
         for(var i=0;i<d.severeAdverse.length;i++){h+="\u2022 "+esc(d.severeAdverse[i])+"<br>"}
         h+="</div>";
     }
@@ -422,7 +436,7 @@ function showCard(id){
     for(var i=0;i<d.contraindications.length;i++){h+=esc(d.contraindications[i])+"; "}
     h+="</div>";
     h+='<div style="width:100px;height:100px;border:1px dashed #ccc;display:flex;align-items:center;justify-content:center;margin:16px auto;border-radius:8px;color:#999">\u4e8c\u7ef4\u7801\u5360\u4f4d</div>';
-    h+='</div><button class="print-btn" onclick="printCard()">\U0001f5a8\ufe0f \u6253\u5370\u6b64\u5361\u7247</button>';
+    h+='</div><button class="print-btn" onclick="printCard()">🖨️ \u6253\u5370\u6b64\u5361\u7247</button>';
     document.getElementById("cardPreview").innerHTML=h;
 }
 
